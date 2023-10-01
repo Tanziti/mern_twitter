@@ -1,0 +1,27 @@
+{
+  "name": "mern_twiiter",
+  "version": "1.0.0",
+  "description": "hey hey hey",
+  "scripts": {
+    "backend-install": "npm install --prefix backend",
+    "backend": "npm run dev --prefix backend",
+    "frontend-install": "npm install --prefix frontend",
+    "frontend": "npm start --prefix frontend",
+    "frontend-build": "npm run build --prefix frontend",
+    "build": "npm run backend-install && npm run frontend-install && npm run frontend-build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tanziti/mern_twitter.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tanziti/mern_twitter/issues"
+  },
+  "homepage": "https://github.com/Tanziti/mern_twitter#readme",
+  "engines": {
+    "node": "16.x"
+  },
+}

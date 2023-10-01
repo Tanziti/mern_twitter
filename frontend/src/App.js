@@ -2,15 +2,15 @@ import { useEffect, useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { Switch } from 'react-router-dom';
 
-import { AuthRoute, ProtectedRoute } from './components/Routes/Routes';
-import NavBar from './components/NavBar/NavBar';
+import { AuthRoute, ProtectedRoute } from './component/Routes/Routes.js';
+import NavBar from './component/NavBar/NavBar.js';
 
-import MainPage from './components/MainPage/MainPage';
-import LoginForm from './components/SessionForms/LoginForm';
-import SignupForm from './components/SessionForms/SignupForm';
-import Tweets from './components/Tweets/Tweets';
-import Profile from './components/Profile/Profile';
-import TweetCompose from './components/Tweets/TweetCompose';
+import MainPage from './component/MainPage/MainPage.js';
+import LoginForm from './component/SessionForms/LoginForm.js';
+import SignupForm from './component/SessionForms/SignupForm.js';
+import Tweets from './component/Tweets/Tweets.js';
+import Profile from './component/Profile/Profile.js';
+import TweetCompose from './component/Tweets/TweetCompose.js';
 
 import { getCurrentUser } from './store/session';
 
