@@ -38,9 +38,11 @@ app.use(
 );
 
 // Attach Express routers
-app.use("/api/users", usersRouter);
-app.use("/api/tweets", tweetsRouter);
-app.use("/api/csrf", csrfRouter);
+app.use('/api/tweets', tweetsRouter);
+app.use('/api/users', usersRouter);
+app.use('/api/csrf', csrfRouter);
+
+// Serve static React build files statically in production
 if (isProduction) {
   const path = require('path');
   // Serve the frontend's index.html file at the root route
@@ -62,7 +64,6 @@ if (isProduction) {
     );
   });
 }
-
 app.use((req, res, next) => {
   const err = new Error("Not Found");
   err.statusCode = 404;
