@@ -4,7 +4,7 @@ const User = require('../models/User');
 const Tweet = require('../models/Tweet');
 const bcrypt = require('bcryptjs');
 const { faker } = require('@faker-js/faker');
-require('dotenv').config(); 
+// require('dotenv').config(); 
 
 
 const NUM_SEED_USERS = 10;
